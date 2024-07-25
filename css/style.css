@@ -1,0 +1,435 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header CSS Starts */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    transition: 1.5s all;
+}
+
+
+.darkHeader{
+    opacity: 1;
+}
+
+header.fixedToTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+/* add space for fixed header when it's fixed to top */
+header.fixedToTop + .content{
+    margin-top:8rem;
+}
+.top-left-header h6 {
+
+    padding-right: 140px;
+}
+
+.top-left-header p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.top-left-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right-header h4 {
+    padding-right: 20px;
+}
+
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-header .logo {
+    font-weight: 900;
+    font-size: 26px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+}
+
+/* Header CSS End*/
+/* main banner wrapper */
+.main-banner-wrapper {
+    background-image: url(../img/mainBannerBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 958px;
+    position: relative;
+
+}
+
+.main-banner-content {
+
+    text-align: center;
+    position: absolute;
+    max-width: 630px;
+    width: 100%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-40%, -50%);
+}
+
+.main-banner-img {
+    position: absolute;
+    right: 0;
+    max-width: 650px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+h1 {
+    font-weight: 800;
+    color: #222222;
+    font-size: 121px;
+    text-transform: uppercase;
+    line-height: 87px;
+    letter-spacing: -11px;
+}
+
+h1 span {
+    color: #f9236f;
+    display: block;
+}
+
+.main-banner-content h3 {
+    color: #222222;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: 20px;
+    letter-spacing: 87px;
+    padding-left: 118px;
+}
+
+.main-banner-content p {
+    text-align: center;
+}
+
+.button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9236e+0,f92347+100 */
+    background: linear-gradient(to right, #f9236e 0%, #f92347 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+/* main  starts */
+main {
+    position: relative;
+}
+
+/* product main wrapper starts */
+.product-main-wrapper {
+    background-color: #f3f3f3;
+}
+
+/* support wrapper starts */
+.support-wrapper .support-block {
+    text-align: center;
+    padding-bottom: 72px;
+}
+
+.support-wrapper .support-block .icon {
+    height: 125px;
+    width: 125px;
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -60px auto 0;
+}
+
+.support-wrapper .support-block .icon i {
+    font-size: 45px;
+}
+
+.support-wrapper .support-block h4 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.support-wrapper .support-block p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.support-wrapper .container {
+    position: absolute;
+    background: #ffffff;
+    margin-top: -72px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* support wrapper ends */
+/* fashion wrapper starts */
+.fashion-wrapper h3 {
+    font-weight: 800;
+    color: #222222;
+    font-size: 48px;
+    line-height: 45px;
+    letter-spacing: -3px;
+}
+.fashion-wrapper .col-sm-6{
+    background-color: #ffffff;
+}
+
+.fashion-wrapper h3 span {
+    color: #f9236f;
+    display: block;
+}
+
+.fashion-left-block {
+    background-image: url(../img/fashionBanner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 125px;
+    padding: 50px;
+}
+
+.fashion-left-block p {
+    width: 225px;
+}
+
+.fashion-right-block {
+    background-image: url(../img/fashionBanner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 125px;
+    padding: 50px;
+}
+
+.fashion-right-block p {
+    width: 225px;
+}
+
+/* fashion wrapper ends */
+/* product wrapper starts */
+.product-wrapper h3 {
+    font-weight: 900;
+    font-size: 26px;
+    padding-top: 110px;
+}
+
+.product-wrapper p {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.product-display h4 span{
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #6b6b6b;
+}
+.product-display .card{
+    border: 0;
+    border-radius: 0;
+}
+.product-wrapper .container{
+    padding: 20px;
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0)
+}
+.product-wrapper .container{
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* product wrapper ends */
+/* product main wrapper ends */
+/* news section starts */
+.news{
+    background-image: url(../img/newsBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    padding-bottom: 185px;
+}
+.news-heading h3{
+    font-size: 26px;
+    font-weight: 900;
+}
+.news-heading{
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+.news-cont p span{
+    color: #bebebe;
+}
+.news-cont .button{
+    margin-right: 175px;
+}
+.news-cont i{
+    color: #ff0000;
+}
+.news-cont img{
+    width: 100%;
+}
+.news-report{
+    background-color: #ffffff;
+    padding: 30px;
+}
+/* news section ends */
+/* brand section starts */
+.brand-cont h3{
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+}
+.brand-info-cont p{
+    color: #bebebe;
+}
+.brand-info-cont h5{
+    color: #f92349;
+}
+.brand-info-cont h5 span{
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #bebebe;
+}
+.brand-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000000;
+    padding: 25px 0;
+}
+.brand-info-cont{
+    padding-left: 40px;
+}
+.brand .brand-sale-banner{
+    text-align: center;
+}
+.brand .row{
+    padding-top: 50px;
+    border-bottom: 1px solid #000000;
+}
+.brand-info :last-child{
+    border: 0;
+}
+.brand-footer{
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.brand-footer h4{
+    font-size: 26px;
+    font-weight: 900;
+}
+.brand-footer form span input{
+    height: 50px;
+    width: 565px;
+}
+.brand .container{
+    background-color: #ffffff;
+    margin-top: -100px;
+}
+.brand-cont .brand-info:last-child{
+    border-bottom: 0;
+}
+.brand-footer form{
+    padding-bottom: 50px;
+}
+/* brand section ends */
+/* main ends */
+/* footer starts */
+footer{
+    background: linear-gradient(to right, #f9236e 0%, #f92347 100%);
+    color: #ffffff;
+    padding: 80px;
+}
+footer p{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font: 15px;
+}
+footer h4{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    padding: 10px 0;
+}
+.footer-bottom ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content:center ;
+    padding-top: 50px;
+}
+.footer-bottom ul li a{
+    padding: 0 20px;
+}
+.footer-bottom p{
+    text-align: center;
+}

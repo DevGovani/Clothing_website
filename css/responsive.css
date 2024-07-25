@@ -1,0 +1,72 @@
+@media screen and (max-width: 1200px) {
+ .main-banner-wrapper{
+    min-height: 672px;
+ }
+ .main-banner-img{
+    max-width: 425px;
+ }
+}
+@media screen and (max-width: 992px) {
+   .top-left-header h6{
+      display: none;
+   }
+   h1{
+      line-height: 42px;
+      font-size: 54px;
+      letter-spacing: -3px;
+   }
+   .main-banner-content h3{
+      font-size: 20px;
+      letter-spacing: 46px;
+      padding-left: 37px;
+   }
+   .main-banner-content{
+      max-width: 435px;
+   }
+  
+  }
+@media screen and (max-width: 767px) {
+   .main-banner-wrapper {
+      min-height: 741px;
+  }
+  .main-banner-img {
+   max-width: 300px;
+   }
+   .main-banner-content{
+      top: 30%;
+      
+   }
+   .carousel-inner .carousel-item>div {
+      display: none
+   }
+  
+   .carousel-inner .carousel-item>div:first-child {
+      display: block
+   }
+    
+}
+@media screen and (max-width: 576px){
+   .support-wrapper .support-block .icon{
+      margin: 0 auto 20px;
+   }
+   .main-banner-content{
+      top: 35%;
+      left: 40%;
+   }
+   .support-wrapper .support-block .icon {
+      margin: 0 auto;
+  }
+   
+}
+@media (min-width: 768px) {
+
+   .carousel-inner .carousel-item-end.active,
+   .carousel-inner .carousel-item-next {
+       transform: translateX(25%)
+   }
+
+   .carousel-inner .carousel-item-start.active,
+   .carousel-inner .carousel-item-prev {
+       transform: translateX(-25%)
+   }
+}
